@@ -1,0 +1,117 @@
+[
+  {
+    "teste": "Status",
+    "status": 200,
+    "resposta": {
+      "mensagem": "API Banco RPG em funcionamento.",
+      "status": "sucesso"
+    }
+  },
+  {
+    "teste": "Criar",
+    "status": 201,
+    "resposta": {
+      "id": 1,
+      "nivel": 1,
+      "nome": "Teste isolado",
+      "saldo": 1000,
+      "xp": 0
+    }
+  },
+  {
+    "teste": "Listar",
+    "status": 200,
+    "resposta": [
+      {
+        "id": 1,
+        "nivel": 1,
+        "nome": "Teste isolado",
+        "saldo": 1000,
+        "xp": 0
+      }
+    ]
+  },
+  {
+    "teste": "Editar",
+    "status": 200,
+    "resposta": {
+      "id": 1,
+      "nivel": 1,
+      "nome": "Editado",
+      "saldo": 1000,
+      "xp": 0
+    }
+  },
+  {
+    "teste": "Comprar",
+    "status": 201,
+    "resposta": {
+      "item": {
+        "id": 1,
+        "jogador_id": 1,
+        "nome": "Espada Comum",
+        "preco": 200,
+        "raridade": "Comum"
+      },
+      "mensagem": "Item comprado com sucesso.",
+      "nivel": 1,
+      "saldo": 800,
+      "xp": 20
+    }
+  },
+  {
+    "teste": "Inventário",
+    "status": 200,
+    "resposta": [
+      {
+        "id": 1,
+        "jogador_id": 1,
+        "nome": "Espada Comum",
+        "preco": 200,
+        "raridade": "Comum"
+      }
+    ]
+  },
+  {
+    "teste": "Saldo insuficiente",
+    "status": 400,
+    "resposta": {
+      "erro": "Saldo insuficiente para realizar essa aposta."
+    }
+  },
+  {
+    "teste": "Apostar",
+    "status": 201,
+    "resposta": {
+      "id": 1,
+      "jogador_id": 1,
+      "nivel": 1,
+      "premio": 200,
+      "resultado": "vitória",
+      "saldo": 900,
+      "valor": 100,
+      "xp": 70
+    }
+  },
+  {
+    "teste": "Excluir",
+    "status": 200,
+    "resposta": {
+      "mensagem": "Jogador removido com sucesso."
+    }
+  },
+  {
+    "teste": "Inexistente",
+    "status": 404,
+    "resposta": {
+      "erro": "Jogador não encontrado."
+    }
+  },
+  {
+    "teste": "Nome obrigatório",
+    "status": 400,
+    "resposta": {
+      "erro": "'nome' é obrigatório e deve ser um texto não vazio."
+    }
+  }
+]

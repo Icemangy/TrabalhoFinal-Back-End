@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+venv/
+
+# React / Node
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+npm-debug.log*
+
+# Local configuration
+.env
+frontend/.env
+
+# Dados locais (Etapa 2)
+*.db
+*.db-*
+*.sqlite
+.venv/
